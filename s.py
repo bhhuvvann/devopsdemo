@@ -26,7 +26,7 @@ def add():
             num2 = float(request.form['num2'])
             result = num1 + num2
         except (ValueError, KeyError):
-            result = "Invalid inputttt!"
+            result = "Invalid input!"
     return render_template_string(html_form, result=result)
 
 if __name__ == '__main__':
