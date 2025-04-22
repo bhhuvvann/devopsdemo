@@ -18,4 +18,4 @@ def test_addition_post_valid(client):
 
 def test_addition_post_invalid(client):
     response = client.post('/', data={'num1': 'a', 'num2': '3'})
-    assert b"Invalid input" in response.data
+    assert b"Invalid inputtt" in response.data
